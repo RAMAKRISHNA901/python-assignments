@@ -23,17 +23,6 @@ print(sum/avg)
 
 
 
-#write down assigment on each methods with 5 diffrent examples of pop()and discard() and remove()
-
-x={10,20,30,40,50,60}
-x.pop()
-print(x)
-#
-x={200,300,400,500,600}
-x.pop()
-print(x)
-
-
 
 
 
