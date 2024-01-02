@@ -1,0 +1,16 @@
+# handling csv file (comma seprated values)
+
+import csv
+
+with open("emp.csv",'w',newline='') as a:
+    w=csv.writer(a)
+    w.writerow(["emp_id","emp_name",'emp_phn'])
+    n=int(input("enter number of employee to entry details "))
+    for i in range(1,n+1):
+        print(i," EMPLOYEE DEATILS ")
+        eid=int(input("enter employee no : "))
+        ename=input("enter the emp name :")
+        ephn=input("enter the emp phn :")
+        w.writerow([eid,ename,ephn])
+    print("totsl emp data written to csv file ")
+
