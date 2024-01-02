@@ -1,15 +1,15 @@
-f=open("krishna.txt","w")
-a=open("ram.txt","w")
-b=open("virat.txt","w")
+f=open("rohit.txt","w")
+a=open("aman.txt","w")
+b=open("varun.txt","w")
 c=open("emp.csv","w")
 
 #zipfile
 from zipfile import *
 
 f=ZipFile("abcd.zip","w")
-f.write("krishna.txt")
-f.write("ram.txt")
-f.write("virat.txt")
+f.write("ramu.txt")
+f.write("aman.txt")
+f.write("raju.txt")
 f.write("emp.csv")
 f.close()
 print("zip file  created")
