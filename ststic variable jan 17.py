@@ -33,7 +33,71 @@ while True:
         print("invaild option, please select correct option ")
     
         
-        
+ # delete of static variable
+class student:
+    a=10
+    @classmethod
+    def m2(cls):
+        del cls.a
+
+student.m2()
+print(student.__dict__)
+
+
+
+
+class Test:
+    a=10
+    def __init__(self):
+        Test.b=20
+        del Test.a
+    def m1(self):
+        Test.c=40
+        del Test.b
+    @classmethod
+    def m2(cls):
+        cls.d=588
+        del Test.c
+    @staticmethod
+    def m3():
+        Test.r=70
+
+t=Test()
+t.m1()
+t.m3()
+print(Test.__dict__)
+
+class Test:
+    a=10
+    def __init__(self):
+        Test.b=30
+        del Test.a
+    def m1(self):
+        Test.c=40
+        del Test.b
+    @classmethod
+    def m2(cls):
+        cls.d=588
+        del Test.c
+    @staticmethod
+    def m3():
+        Test.r=50
+
+t=Test()
+t.m1()
+t.m2()
+t.m3()
+print(Test.__dict__)
+
+
+
+
+
+
+
+
+Comment
+       
         
         
         
