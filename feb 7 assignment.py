@@ -85,27 +85,7 @@ my_bus = bus("tata", my_engine)
 
 my_bus.display_info()
 
-#3
-class Animal:
-    def __init__(self, name):
-        self.name = name
 
-    def make_sound(self):
-        pass
-
-class Dog(Animal):
-    def make_sound(self):
-        return "bow!"
-
-class Cat(Animal):
-    def make_sound(self):
-        return "Meow!"
-
-my_dog = Dog("arjun")
-my_cat = Cat("joe")
-
-print(f"{my_dog.name} says {my_dog.make_sound()}")
-print(f"{my_cat.name} says {my_cat.make_sound()}")
 
 # inner class.
 #1
