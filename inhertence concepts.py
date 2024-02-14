@@ -83,20 +83,20 @@ c.m1()
 
 class p():
     def first(self):
-        print("this is a first function")
+        print("this first function")
 class c(p):
     def second(self):
-        print("this is second function")
+        print("this  second function")
 c=c()
 c.first()
 c.second()
 
 class p():
     def a(self):
-        print("this is a first section")
+        print("this first section")
 class c(p):
     def b(self):
-        print("this is second section")
+        print("this  second section")
 c=c()
 c.a()
 c.b()
@@ -117,35 +117,6 @@ c.m2()
 c.m3()
 
 
-
-class organism:
-    alive=True
-class animal(organism):
-    def eat(self):
-        print("this animal is eating")
-class dog(animal):
-    def bark(self):
-        print("this dog is barking")
-dog = dog()
-print(dog.alive)
-dog.eat()
-dog.bark()
-
-
-class human:
-    alive=True
-class man(human):
-    def eat(self):
-        print("this human is eating")
-class arjun(man):
-    def silent(self):
-        print("this man is silent")
-arjun = arjun()
-print(arjun.alive)
-arjun.eat()
-arjun.silent()
-
-
 class gp:
     def m1(self):
         print("grand father")
@@ -171,7 +142,8 @@ c=c()
 c.m1()
 
 
-#hierarchical -> single parent but multiple child class
+#hierarchical 
+# -> single parent but multiple child class
 
 class mobile:
     def a(self):
@@ -220,11 +192,11 @@ class human:
 
 class c1(human):
     def b(self):
-        print("raja")
+        print("rama krishna")
 
 class c2(human):
     def c(self):
-        print("rani")
+        print("rahithya")
 
 c1=c1()
 c1.a()
@@ -241,11 +213,11 @@ class p:
 
 class c1(p):
     def b(self):
-        print("raja")
+        print("rama krishna")
 
 class c2(p):
     def c(self):
-        print("rani")
+        print("rahiyatha")
 
 c1=c1()
 c1.a()
@@ -256,7 +228,11 @@ c2.a()
 c2.c()
 
 
-#multiple #if parent class is multiple but one child class
+#multiple
+# #if parent class is multiple but one child class
+
+
+
 class p1:
     def m1(self):
         print("parent")
@@ -284,18 +260,7 @@ class c(p1,p2):
 c=c()
 c.a()
 
-class p1:
-    def a(self):
-        print("parent")
-class p2:
-    def a(self):
-        print("parent 2")
-class c(p1,p2):
-    def b(self):
-        print("child")
-c=c()
-c.a()
-c.b()
+
 
 
 class p1:
@@ -311,4 +276,5 @@ c=c()
 c.a()
 c.b()
 c.c()
+
 
